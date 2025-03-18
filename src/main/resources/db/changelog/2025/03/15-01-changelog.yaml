@@ -1,0 +1,45 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1742084058817-1
+      author: admin
+      dbms: postgresql
+      context: users
+      comment: creates fintech_finsight_users table
+      changes:
+        - createTable:
+            tableName: fintech_finsight_users
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: version
+                  type: bigint(20)
+              - column:
+                  name: email
+                  type: varchar(255)
+                  constraints:
+                    unique: true
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: activation_code
+                  type: varchar(1000)
+                  constraints:
+                    unique: true
+              - column:
+                  name: activation_code_expires_at
+                  type: datetime
+              - column:
+                  name: created_at
+                  type: datetime
+              - column:
+                  name: updated_at
+                  type: datetime

@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=fintech_financial_insight'
+      - 'POSTGRES_PASSWORD=test'
+      - 'POSTGRES_USER=test'
+    ports:
+      - '5432:5432'
+  zipkin:
+    image: 'openzipkin/zipkin:latest'
+    ports:
+      - '9411:9411'
