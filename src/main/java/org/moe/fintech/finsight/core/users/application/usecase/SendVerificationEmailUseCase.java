@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Application
 @Component
-public class SendVerificationEmailUseCase implements SendVerificationEmail {
+class SendVerificationEmailUseCase implements SendVerificationEmail {
 
 	private final EmailNotificationPort emailNotificationPort;
 	private final ApplicationEventPublisher eventPublisher;

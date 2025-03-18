@@ -10,7 +10,7 @@ import org.springframework.modulith.events.ApplicationModuleListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class NewUserSignedUpEventHandler implements NewUserSignedUp {
+class NewUserSignedUpEventHandler implements NewUserSignedUp {
 
 	private final UserRepository repository;
 	private final GenerateVerificationToken generateVerificationToken;

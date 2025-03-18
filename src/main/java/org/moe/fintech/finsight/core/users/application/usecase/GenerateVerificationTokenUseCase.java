@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Application
 @Component
-public class GenerateVerificationTokenUseCase implements GenerateVerificationToken {
+class GenerateVerificationTokenUseCase implements GenerateVerificationToken {
 
 	private final ApplicationEventPublisher eventPublisher;
 	private final PasswordEncoder passwordEncoder;

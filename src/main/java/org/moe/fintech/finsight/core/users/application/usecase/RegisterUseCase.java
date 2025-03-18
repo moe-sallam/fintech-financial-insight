@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Application
 @Component
-public class RegisterUseCase implements Register {
+class RegisterUseCase implements Register {
 
 	private final ApplicationEventPublisher eventPublisher;
 

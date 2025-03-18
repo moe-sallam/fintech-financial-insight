@@ -2,7 +2,6 @@ package org.moe.fintech.finsight.core.users.infrastructure.controller;
 
 import org.jmolecules.architecture.hexagonal.PrimaryAdapter;
 import org.moe.fintech.finsight.core.users.application.port.in.Signup;
-import org.moe.fintech.finsight.core.users.application.usecase.SignupUseCase;
 import org.moe.fintech.finsight.core.users.domain.UserEmailAddress;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

@@ -10,7 +10,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 @Component
-public class VerificationTokenVerifiedEventHandler implements VerificationTokenVerified {
+class VerificationTokenVerifiedEventHandler implements VerificationTokenVerified {
 
 	private final UserRepository repository;
 	private final Register register;

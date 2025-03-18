@@ -10,7 +10,7 @@ import org.springframework.modulith.events.ApplicationModuleListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class VerificationEmailVerifiedEventHandler implements VerificationEmailVerified {
+class VerificationEmailVerifiedEventHandler implements VerificationEmailVerified {
 
 	private final UserRepository repository;
 	private final EmailNotificationPort emailNotificationPort;

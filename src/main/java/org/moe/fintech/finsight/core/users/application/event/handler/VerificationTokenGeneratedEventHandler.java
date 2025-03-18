@@ -8,7 +8,7 @@ import org.springframework.modulith.events.ApplicationModuleListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class VerificationTokenGeneratedEventHandler implements VerificationTokenGenerated {
+class VerificationTokenGeneratedEventHandler implements VerificationTokenGenerated {
 
 	private final UserRepository repository;
 	private final SendVerificationEmail sendVerificationEmail;

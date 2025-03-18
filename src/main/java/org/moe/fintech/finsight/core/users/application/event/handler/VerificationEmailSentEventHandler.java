@@ -7,7 +7,7 @@ import org.springframework.modulith.events.ApplicationModuleListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class VerificationEmailSentEventHandler implements VerificationEmailSent {
+class VerificationEmailSentEventHandler implements VerificationEmailSent {
 
 	private final UserRepository repository;
 
